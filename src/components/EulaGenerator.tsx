@@ -724,6 +724,9 @@ export default function EulaGenerator() {
       pdf.text(footerText, pageWidth / 2, pageHeight - 10, {
         align: "center",
       });
+      if (variables.providerEmail) {
+        pdf.text(variables.providerEmail, pageWidth/2 + 40, pageHeight - 10);
+      }
     }
 
     pdf.save(`${variables.productName}_EULA.pdf`);
