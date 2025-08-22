@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+/* Only for the EULA lists */
+.legal-ol { 
+  list-style-position: outside !important; 
+  padding-left: 1.5rem !important; 
+  margin: 0 !important;
+}
+.legal-ol.decimal { list-style-type: decimal !important; }
+.legal-ol.alpha   { list-style-type: lower-alpha !important; }
+.legal-ol.roman   { list-style-type: lower-roman !important; }
+
